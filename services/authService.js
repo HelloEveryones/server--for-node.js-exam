@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
 const jwt=require('../lib/jsonwebtoken');
-const SECRET='79504kfngkdgfjssctfr5667v'
+const {SECRET}=require('../config')
 
 
 exports.register = async (userData) => {
